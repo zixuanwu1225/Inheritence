@@ -9,5 +9,4 @@ public class VolumeGroups extends LVM{
         this.PV = new ArrayList<PhysicalVolume>();
         this.PV.add(PV);
     }
-
 }
