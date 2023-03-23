@@ -8,4 +8,7 @@ public class PhysicalVolume extends LVM{
         this.size=size;
         actualName = name2;
     }
+    public void pvCreate(String pvName,String hdName){
+        
+    }
 }

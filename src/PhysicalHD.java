@@ -9,7 +9,17 @@ public class PhysicalHD extends LVM{
         this.size=size;
         list = new ArrayList<String>();
     }
-    public String createHD(String name, int size){
-        list.add(name+""+size+""+getUuid());
+    public void createHD(String name, int size){
+        list.add(name+" "+size+"GB "+super.getUuid());
+        System.out.println("drive " + name+" installed");
+    }
+    public void listDrives(){
+        for(int i=0;i<list.size();i++){
+            System.out.println("---------------------------------------------");
+            System.out.println(list.get(i));
+        }
+    }
+    public ArrayList<String> returnList(){
+        return list;
     }
 }

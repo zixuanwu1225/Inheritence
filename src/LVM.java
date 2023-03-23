@@ -8,7 +8,7 @@ public class LVM{
         this.uuid=uuid;
     }
     public UUID getUuid() {
-        return uuid;
+        return UUID.randomUUID();
     }
     public String getName() {
         return name;
