@@ -19,6 +19,9 @@ public class PhysicalHD extends LVM{
             System.out.println(list.get(i));
         }
     }
+    public int returnSize(int index){
+
+    }
     public ArrayList<String> returnList(){
         return list;
     }
