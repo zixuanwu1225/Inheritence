@@ -33,16 +33,19 @@ public class PhysicalVolume extends LVM{
         }
         if(check){
             HDs.add(pvName+":"+h.returnList().get(count));
-            PV = new PhysicalVolume(hdName,UUID.randomUUID(),)
+            PV = new PhysicalVolume(hdName,UUID.randomUUID(),size,pvName);
             System.out.println(pvName+"created");
         }
     }
     public void listPVs(){
-        if(!VG.getVGs().contains(getActualName())){
-            System.out.println("VG does not contain this Physical Volume");
+        if(!VG.getVGs().contains(PV.getActualName())){
+            System.out.println("Is not in a Volume Group yet");
         }
         else{
-            f
+            for(int i=0;i<PVs.size();i++){
+                System.out.println("---------------------------------------------");
+                System.out.println(PVs.get(i));
+            }
         }
     }
     public ArrayList<String> getHDs(){

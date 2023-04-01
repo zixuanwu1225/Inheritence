@@ -1,0 +1,27 @@
+LVM - Superclass, contains redundant information
+Contains - name, UUID,VolumeGroups ArrayList.
+Methods:
+Returns - name, UUID, VolumeGroups ArrayList.
+
+Logical Volumes-Subclass of LVM, contains LogicalVolumes
+Contains - LG size as well as VolumeGroup name
+Methods:
+Prints - List of Logical Volumes, and creates Logical Volumes
+
+Volume Groups - Subclass of LVM
+Contains - Physical Volumes ArrayList
+Methods:
+Returns - VolumeGroups ArrayList
+Prints - List of Volume Groups, Creation of Volume Groups
+
+Physical HardDrive - Subclass of LVM
+Contains - size, ArrayList of Drives
+Methods:
+Returns:list of Hard Drives
+Prints:Creation of Drives, List of Drives
+
+Physical Volume - subclass of LVM
+Contains -Physical HD, Volume groups, Array of Physical Volumes, size, ArrayList of Hard Drives
+Methods:
+Returns: name of Volume,ArrayList of Hard Drives
+Prints:Creation of Physical Volumes, List of Physical Volumes.
